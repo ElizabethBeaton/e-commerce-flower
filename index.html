@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -13,32 +12,42 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
-    <!--navbar-->
-    <nav class="navbar">
-      <div class="navbar-center">
-        <span class="nav-icon"> <i class="fas fa-bars"></i> </span>
-        <img src="images///" alt="store-logo" />
+    <!--navbar/header-->
+    <header class="header_home">
+      <nav class="nav container">
+        <div class="nav_box">
+          <a class="nav_logo" href="/">
+            <img src="images/logo.jpeg" alt="" />Ruffles & Blooms
+          </a>
+        </div>
+        <div class="nav_menu">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="products.html">Products</a>
+          <a href="#">Contact</a>
+        </div>
         <div class="cart-btn">
           <span class="nav-icon">
             <i class="fas fa-cart-plus"></i>
           </span>
           <div class="cart-items">0</div>
         </div>
-      </div>
-    </nav>
-    <!--end of navbar-->
-    <header class="hero">
-      <div class="banner">
-        <h1 class="banner-title">
-          a Selection of trendy and bold flower bouquets
-        </h1>
-        <button class="banner-btn">Shop Now</button>
-      </div>
+      </nav>
     </header>
-    <section class="main">
+    <!--navbar/header-->
+    <section class="hero">
+      <div class="banner">
+        <h1 class="banner-title">a Selection of trendy and bold flower bouquets</h1>
+        <button class="banner-btn"><a href="products.html">Shop Now</a></button>
+      </div>
+    </section>
+        <section class="main">
       <div class="images-center">
         <article class="three-images">
           <div class="image-container">
@@ -57,10 +66,29 @@
             <img src="images/home-photo3.jpg" alt="" class="image-img" />
             <!-- <div class="box-text">Summer Favourites</div> -->
           </div>
-        </article>
+        
+        
+    <!-- cart -->
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">
+          <i class="fas fa-window-close"></i>
+        </span>
+        <h2>Your cart</h2>
+        <div class="cart-content">
+          <!-- cart item -->
+          <!-- <div class="cart-item"> 
+            
+          </div> -->
+          <!-- end of cart item -->
+        </div>
+        <div class="cart-footer">
+          <h3>Your Total : £ <span class="cart-total">0</span></h3>
+          <button class="clear-cart banner-btn">Clear Cart</button>
+        </div>
       </div>
-    </section>
-
-    <script src="script.js"></script>
+    </div>
+    <!-- end of cart -->
+    <script src="script.js" type="module"></script>
   </body>
 </html>
