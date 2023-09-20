@@ -86,6 +86,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .banner {
   text-align: center;
@@ -94,10 +95,12 @@ body {
   padding: 2rem;
 }
 .banner-title {
+  text-align: center;
   font-size: 3.4rem;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  
   font-family: "Dancing Script", cursive;
 }
 .banner-btn {
@@ -133,13 +136,21 @@ body {
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
 }
-
 .image-img {
   display: block;
   width: 100%;
   min-height: 12rem;
   transition: var(--mainTransition);
 }
+.label {
+  text-align: center;
+  background-color: #C37F9B;
+  position: absolute;
+  bottom: 70px;
+  width: 100%;
+  padding: 12px;
+}
+
 /* ---------------- End of Home Page ---------------*/
 /* ---------------- Home middle section ---------------*/
 .middle_section {
@@ -166,7 +177,6 @@ body {
   text-align: center;
 }
 .item h4 {
-  
   font-size: 22px;
   margin-bottom: 20px;
   text-align: center;
@@ -204,14 +214,14 @@ h1 {
   text-align: center;
 }
 h4 {
-  font-size: 40px;
+  font-size: 30px;
 }
 .post {
   border: 2px solid var(--primaryColor);
   padding: 30px;
 }
 .section-stack .icon {
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 7rem;
 }
 /* ---------------- End of Home Last section ---------------*/
@@ -219,10 +229,18 @@ h4 {
 .social_media {
   width: 100%;
   margin: 0 auto;
-  padding: 6rem 0 ;
+  padding: 6rem 0;
 }
 .social_btn {
   padding: 40px 60px;
+  background-color: #c37f9b;
+  border: none;
+  transition: background-color 1s ease-out 100ms;
+  cursor: pointer;
+  font-size: 20px;
+}
+.social_btn:hover {
+  background-color: #ff1493;
 }
 .buttons_container {
   display: grid;
@@ -232,9 +250,6 @@ h4 {
 }
 /* ---------------- End of Home social Media Buttons ---------------*/
 /* ---------------- Footer ---------------*/
-hr {
-  padding-top: 20px;
-}
 
 footer {
   padding: 4rem 0px;
@@ -251,6 +266,9 @@ footer {
 .footer_about {
   max-width: 350px;
 }
+.footer_about {
+  cursor: pointer;
+}
 .footer_title {
   font-weight: bold;
   padding-bottom: 18px;
@@ -263,15 +281,20 @@ footer {
 }
 .input_email,
 .submit_btn {
-  padding: 12px;
   display: block;
 }
 .input_email {
   margin: 0 auto;
   margin-bottom: 10px;
+  padding: 12px;
 }
 .submit_btn {
   margin: 0 auto;
+  color: #fff;
+  background-color: #313131;
+  border: none;
+  padding: 16px;
+  cursor: pointer;
 }
 
 /* ---------------- End of Footer ---------------*/
