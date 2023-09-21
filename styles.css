@@ -100,7 +100,6 @@ body {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
   margin-bottom: 1rem;
-  
   font-family: "Dancing Script", cursive;
 }
 .banner-btn {
@@ -142,9 +141,20 @@ body {
   min-height: 12rem;
   transition: var(--mainTransition);
 }
+.image-img:hover {
+  -webkit-animation: zoomin 15s 3;
+}
+@-webkit-keyframes zoomin {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(2);
+  }
+}
 .label {
   text-align: center;
-  background-color: #C37F9B;
+  background-color: #c37f9b;
   position: absolute;
   bottom: 70px;
   width: 100%;
@@ -290,7 +300,7 @@ footer {
 }
 .submit_btn {
   margin: 0 auto;
-  color: #fff;
+  color: #ececec;
   background-color: #313131;
   border: none;
   padding: 16px;
@@ -369,6 +379,23 @@ footer {
   letter-spacing: var(--mainSpacing);
   color: var(--primaryColor);
   text-align: center;
+}
+.products_button {
+  padding: 16px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 44px;
+  background-color: #313131;
+  color: #ececec;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.products_button:hover {
+  border: 1px solid #313131;
+  background-color: transparent;
+  color: #313131;
+  transition: var(--mainTransition);
 }
 /* --------------- End of Products ---------------- */
 /* Cart */
