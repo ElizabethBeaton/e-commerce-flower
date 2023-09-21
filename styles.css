@@ -3,7 +3,7 @@
 :root {
   --primaryColor: #bf4578;
   --mainWhite: #fff;
-  --mainBlack: #222;
+  --mainBlack: #313131;
   --mainGrey: #ececec;
   --mainSpacing: 0.1rem;
   --mainTransition: all 0.3s linear;
@@ -14,6 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Nanum Myeongjo', serif;
 }
 
 body {
@@ -100,26 +101,28 @@ body {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
   margin-bottom: 1rem;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Nanum Myeongjo', serif;
 }
 .banner-btn {
   padding: 1rem 3rem;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   font-size: 1rem;
-  background: var(--primaryColor);
-  color: var(--mainBlack);
-  border: 1px solid var(--primaryColor);
+  background: var(--mainBlack);
+  color: var(--mainWhite);
+  border: 1px solid var(--mainBlack);
   transition: var(--mainTransition);
   cursor: pointer;
 }
 .banner-btn a {
   text-decoration: none;
-  color: var(--mainBlack);
+  color: var(--mainWhit)e
 }
 .banner-btn:hover {
   background: transparent;
-  color: var(--primaryColor);
+}
+.banner-btn a:hover {
+  color: var(--mainBlack);
 }
 /* --------------- End of Nav/Hero ---------------- */
 /* ---------------- Home Page ---------------*/
@@ -160,6 +163,27 @@ body {
   width: 100%;
   padding: 12px;
 }
+.load_button {
+  padding: 16px 40px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 44px;
+  background-color: #313131;
+  color: #ececec;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.load_button:hover {
+  background: transparent;
+  color: var(--mainBlack);
+  border: 1px solid var(--mainBlack);
+  
+}
+.main a, .middle_section a {
+text-decoration: none;
+}
 
 /* ---------------- End of Home Page ---------------*/
 /* ---------------- Home middle section ---------------*/
@@ -170,28 +194,33 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
-  border: 2px solid red;
 }
 .item {
   color: #000;
-  padding: 10px;
+  padding: 26px;
 }
 .item_text {
   max-width: 400px;
+  font-family: 'Nanum Myeongjo', serif;
+}
+.item p {
+  text-align: start;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 .item h5 {
   font-size: 26px;
   text-align: center;
+  font-weight: 20;
   margin: 50px 0 20px 0;
   text-align: start;
-  text-align: center;
 }
 .item h4 {
   font-size: 22px;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: start;
 }
-.item button {
+.item load_button {
   padding: 10px;
   background-color: var(--primaryColor);
   border: none;
@@ -200,8 +229,20 @@ body {
   display: block;
 }
 .item img {
-  max-width: 350px;
+  max-width: 300px;
   display: block;
+  position: relative;
+  z-index: 1;
+  bottom: 30px;
+  right: 80px;
+}
+.item video {
+   position: relative;
+  display: block;
+  z-index: 2;
+  bottom: 160px;
+  left: 100px;
+ 
 }
 /* ---------------- End of Home middle section ---------------*/
 /* ---------------- Home Last section ---------------*/
@@ -243,14 +284,15 @@ h4 {
 }
 .social_btn {
   padding: 40px 60px;
-  background-color: #c37f9b;
+  background-color: var(--mainBlack);
+  color: var(--mainGrey);
   border: none;
   transition: background-color 1s ease-out 100ms;
   cursor: pointer;
   font-size: 20px;
 }
 .social_btn:hover {
-  background-color: #ff1493;
+  background-color: #151010;
 }
 .buttons_container {
   display: grid;
@@ -312,6 +354,7 @@ footer {
 
 .products {
   padding: 4rem 0;
+  
 }
 .section-title h2 {
   text-align: center;
@@ -379,17 +422,6 @@ footer {
   letter-spacing: var(--mainSpacing);
   color: var(--primaryColor);
   text-align: center;
-}
-.products_button {
-  padding: 16px;
-  display: block;
-  margin: 0 auto;
-  margin-top: 44px;
-  background-color: #313131;
-  color: #ececec;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
 }
 .products_button:hover {
   border: 1px solid #313131;
@@ -493,7 +525,7 @@ footer {
 .cart-footer h3 {
   text-transform: capitalize;
   margin-bottom: 1rem;
-  font-family: var(--cursiveFont);
+  font-family: 'Nanum Myeongjo', serif;
   font-size: 30px;
 }
 .close-cart {
