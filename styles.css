@@ -635,4 +635,16 @@ footer {
   .nav_logo {
     font-size: 15px;
   }
+  .item video {
+    position: relative;
+    display: block;
+    z-index: 2;
+    bottom: 160px;
+    left: 150px;
+    width: 250px;
+  }
+  .footer_lists {
+    display: block;
+  }
+
 }
