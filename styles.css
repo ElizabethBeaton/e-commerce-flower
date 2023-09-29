@@ -149,6 +149,7 @@ body {
   letter-spacing: var(--mainSpacing);
   margin-bottom: 1rem;
   font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
 }
 .banner-btn {
   padding: 1rem 3rem;
@@ -497,51 +498,110 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /*grid-template-rows: 140px 400px;*/
-  column-gap: 2rem;
+  column-gap: 4rem;
   font-size: 18px;
 }
-.about_section .text {
+.text {
   line-height: 40px;
   padding-bottom: 40px;
 }
-
-
-
-/*
-.text1 {
-  grid-column: 1 / 2;
-  grid-row: 1/ 2;
+.text img {
+  padding-top: 50px;
 }
-.text2 {
-  grid-column: 2 / 2;
-  grid-row: 1/ 5;
-}
-.left {
-  grid-column: 1 / 2;
-  grid-row: 2/ 2;
-}
-.right {
-  grid-column: 2 / 2;
-  grid-row: 2/ 2;
-}*/
-
 .bold {
   font-weight: 800;
   font-size: 17px;
 }
-.about_section img {
+.text1 {
+  font-weight: 800;
+  font-size: 22px;
+}
+.text1 img {
+  width: 400px;
+  height: 430px;
+  display: block;
+  margin: auto;
+}
+.text2 img {
   width: 290px;
   height: 290px;
   display: block;
   margin: auto;
 }
-.about_section .left img {
-  width: 390px;
-  height: 390px;
+/* --------------- End of About Section ---------------- */
+/* --------------- Review Section ---------------- */
+.customer_reviews {
+  padding: 5rem;
+}
+.slider {
+  display: flex;
+  aspect-ratio: 15 / 9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 0.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+  position: relative;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 40px;
+}
+.review_1 {
+margin: 40px;
+max-width: 600px;
+}
+.slider-wrapper {
+  position: relative;
+  max-width: 36rem;
+  margin: 0 auto;
+}
+.slider-nav  {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.slider .review_1 {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: contain;
+}
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--mainBlack);
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+.slider-nav a:hover {
+  opacity: 100%;
+}
+.customer_reviews h2,
+.customer_reviews h3,
+.customer_reviews p {
+  text-align: center;
+}
+.customer_reviews h2 {
+  padding-bottom: 40px;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.customer_reviews h3 {
+  padding-bottom: 36px;
+  font-size: 26px;
+}
+.review_1 img {
+  width: 210px;
+  height: 110px;
   display: block;
   margin: auto;
 }
-/* --------------- End of About Section ---------------- */
+/* --------------- End of Review Section ---------------- */
 /* Cart */
 .cart-overlay {
   position: fixed;
