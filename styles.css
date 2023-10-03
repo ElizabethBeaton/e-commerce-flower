@@ -534,7 +534,7 @@ footer {
 }* --------------- About Page About Section ---------------- */
 
 .about_section {
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0px auto;
   margin-top: 130px;
   padding: 20px;
@@ -557,11 +557,11 @@ footer {
 }
 .text1 {
   font-weight: 800;
-  font-size: 22px;
+  font-size: 20px;
 }
 .text1 img {
   width: 400px;
-  height: 430px;
+  height: 460px;
   display: block;
   margin: auto;
 }
@@ -590,6 +590,7 @@ footer {
   padding: 40px;
 }
 .review {
+  padding-left: 75px;
   margin: 40px;
   max-width: 600px;
 }
@@ -600,7 +601,7 @@ footer {
 }
 .slider-nav {
   display: flex;
-  column-gap: 1rem;
+  column-gap: 2rem;
   position: absolute;
   bottom: 1.25rem;
   left: 50%;
@@ -643,6 +644,7 @@ footer {
   height: 110px;
   display: block;
   margin: auto;
+  margin-bottom: 24px;
 }
 /* --------------- End of Review Section ---------------- */
 /* --------------- Contact Section ---------------- */
