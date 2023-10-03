@@ -662,21 +662,23 @@ footer {
 }
 .contacts_image img {
   width: 400px;
-  height: 400px;
-  padding-top: 80px;
+  height: 600px;
+  padding-top: 30px;
 }
-.contact_info p{
+.contact_info p {
   text-align: center;
-  line-height: 30px;
+  line-height: 24px;
+  padding-top: 30px;
 }
 .contact h2 {
-  padding-bottom: 40px;
+  padding-top: 60px;
   font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 6px;
   text-align: center;
 }
 .opening_times {
+  padding: 4rem 0 ;
   max-width: 400px;
   padding-top: 30px;
   display: block;
@@ -686,14 +688,65 @@ footer {
   text-align: center;
 }
 .openings ul {
- list-style-type: none;
+  list-style-type: none;
 }
 .openings li {
-padding: 10px;
-line-height: 30px;
+  padding: 10px;
+  line-height: 30px;
+}
+.form {
+  min-height: calc(100vh);
+  background: url("./images/formimg.jpg") center/cover no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  width: 90%;
+  max-width: 600px;
+}
+.input_group {
+  margin-bottom: 30px;
+  position: relative;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 3px solid #fff;
+  color: #bf4578;
+  background: transparent;
+}
+label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: #fff;
+  cursor: text;
+  transition: 0.2s;
+}
+form button {
+  padding: 10px 0;
+  color: #fff;
+  outline: none;
+  background: transparent;
+  border: 3px solid #fff;
+  width: 100%;
+  cursor: pointer;
+}
+input:focus~label {
+  top: -35px;
+  font-size: 14px;
+  
 }
 /* --------------- End of Contact Section ---------------- */
 /* --------------- End of Review Section ---------------- */
+
 /* --------------- Cart ---------------- */
 .cart-overlay {
   position: fixed;
