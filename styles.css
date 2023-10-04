@@ -1046,6 +1046,12 @@ input:focus ~ label {
 }
 
 @media (max-width: 480px) {
+    .images-center {
+    grid-template-columns: repeat(
+      1,
+      minmax(70px, 1fr)
+    ); /* Display one image per row */
+  }
   .item {
     max-width: 500px;
   }
