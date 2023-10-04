@@ -482,6 +482,7 @@ footer {
   position: absolute;
   top: 70%;
   right: 0;
+
   background: var(--primaryColor);
   border: none;
   text-transform: uppercase;
@@ -511,17 +512,21 @@ footer {
   opacity: 0.5;
 }
 .product h3 {
-  text-transform: capitalize;
-  font-size: 1.1rem;
+  text-transform: uppercase;
+  /*font-size: 1.1rem;*/
+  font-size: 16px;
   margin-top: 1rem;
   letter-spacing: var(--mainSpacing);
   text-align: center;
+  font-family: "Nanum Myeongjo", serif;
 }
 .product h4 {
   margin-top: 0.7rem;
   letter-spacing: var(--mainSpacing);
-  color: var(--primaryColor);
+  color: #adb3b7;
   text-align: center;
+  font-size: 16px;
+  font-family: "Nanum Myeongjo", serif;
 }
 .products_button:hover {
   border: 1px solid #313131;
@@ -680,7 +685,7 @@ footer {
   text-align: center;
 }
 .opening_times {
-  padding: 4rem 0 ;
+  padding: 4rem 0;
   max-width: 400px;
   padding-top: 30px;
   display: block;
@@ -743,10 +748,9 @@ form button {
   cursor: pointer;
   /*font-size: 16px;*/
 }
-input:focus~label {
+input:focus ~ label {
   top: -35px;
   font-size: 14px;
-  
 }
 /* --------------- End of Contact Section ---------------- */
 /* --------------- End of Review Section ---------------- */
@@ -854,6 +858,42 @@ input:focus~label {
 }
 /* --------------- End of Cart ---------------- */
 /* --------------- Media Queries ---------------- */
+@media screen and (max-width: 1100px) {
+  .middle_section {
+    max-width: 900px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .item video {
+    position: relative;
+    display: block;
+    z-index: 2;
+    bottom: 10px;
+    left: 0;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .middle_section {
+    grid-template-columns: repeat(1, minmax(400px, 1fr));
+  }
+  .item_text {
+    max-width: 900px;
+    font-family: "Nanum Myeongjo", serif;
+  }
+  .item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    right: 0px;
+  }
+  .item video {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+}
+/*
 @media screen and (max-width: 968px) {
   .middle_section {
     grid-template-columns: repeat(1, minmax(400px, 1fr));
@@ -872,7 +912,7 @@ input:focus~label {
     margin: 0 auto;
   }
 }
-
+*/
 @media (max-width: 992px) {
   .nav .links {
     display: none;
@@ -885,7 +925,7 @@ input:focus~label {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .images-center {
     grid-template-columns: repeat(
       1,
@@ -908,9 +948,68 @@ input:focus~label {
     left: 250px;
     width: 250px;
   }
+  .item {
+    max-width: 600px;
+  }
+  .item_text {
+    max-width: 900px;
+    text-align: center;
+    font-family: "Nanum Myeongjo", serif;
+  }
+}
+@media (max-width: 768px) {
+  .item_text {
+    max-width: 700px;
+  }
+  .item img {
+    max-width: 350px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    bottom: 70px;
+    right: 80px;
+  }
+  .item video {
+    position: relative;
+    display: block;
+    z-index: 2;
+    bottom: 160px;
+    left: 150px;
+    width: 400px;
+  }
+}
+@media (max-width: 710px) {
+  .item img {
+    max-width: 340px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    bottom: 70px;
+    right: 80px;
+  }
+  .item video {
+    position: relative;
+    display: block;
+    z-index: 2;
+    bottom: 160px;
+    left: 50px;
+    width: 400px;
+  }
+    .middle_section {
+    grid-template-columns: repeat(1, minmax(400px, 1fr));
+  }
 }
 
 @media (max-width: 576px) {
+  .images-center {
+    grid-template-columns: repeat(
+      1,
+      minmax(90px, 1fr)
+    ); /* Display one image per row */
+  }
+  .item_text {
+    max-width: 500px;
+  }
   .dropdown_menu {
     right: 2rem;
     width: unset;
@@ -921,6 +1020,54 @@ input:focus~label {
   .footer_lists {
     display: block;
   }
+}
+@media (max-width: 525px) {
+  .item_text {
+    max-width: 500px;
+  }
+  .item img {
+    max-width: 240px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    bottom: 70px;
+    right: 80px;
+  }
+  .item video {
+    position: relative;
+    display: block;
+    z-index: 2;
+    bottom: 10px;
+    right: 0px;
+    width: 300px;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    max-width: 400px;
+  }
+  .item img {
+    max-width: 240px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    bottom: 70px;
+    right: 80px;
+  }
+  .item video {
+    position: relative;
+    display: block;
+    z-index: 2;
+    bottom: 160px;
+    left: 50px;
+    width: 250px;
+  }
+}
+
+/*
   @media (max-width: 480px) {
     .item img {
       max-width: 250px;
@@ -941,3 +1088,4 @@ input:focus~label {
     }
   }
 }
+*/

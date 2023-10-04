@@ -3,7 +3,7 @@
     {
       "sys": { "id": "1" },
       "fields": {
-        "title": "queen",
+        "title": "carmen",
         "price": 10.99,
         "image": { "fields": { "file": { "url": "./images/bouquet1.jpg" } } }
       }
@@ -11,7 +11,7 @@
     {
       "sys": { "id": "2" },
       "fields": {
-        "title": "wedding",
+        "title": "cheongsam lady",
         "price": 12.99,
         "image": { "fields": { "file": { "url": "./images/bouquet2.jpg" } } }
       }
@@ -19,7 +19,7 @@
     {
       "sys": { "id": "3" },
       "fields": {
-        "title": "valentine",
+        "title": "babe ruth",
         "price": 12.99,
         "image": { "fields": { "file": { "url": "./images/p1.jpg" } } }
       }
@@ -27,7 +27,7 @@
     {
       "sys": { "id": "4" },
       "fields": {
-        "title": "queen",
+        "title": "arrakis",
         "price": 22.99,
         "image": { "fields": { "file": { "url": "./images/p2.jpg" } } }
       }
@@ -35,7 +35,7 @@
     {
       "sys": { "id": "5" },
       "fields": {
-        "title": "wedding",
+        "title": "alora",
         "price": 88.99,
         "image": { "fields": { "file": { "url": "./images/tobuy5.jpg" } } }
       }
@@ -43,7 +43,7 @@
     {
       "sys": { "id": "6" },
       "fields": {
-        "title": "valentine",
+        "title": "be mine",
         "price": 32.99,
         "image": { "fields": { "file": { "url": "./images/tobuy6.jpg" } } }
       }
@@ -51,23 +51,23 @@
     {
       "sys": { "id": "7" },
       "fields": {
-        "title": "queen",
+        "title": "amelie",
         "price": 45.99,
-        "image": { "fields": { "file": { "url": "./images/p3.jpg" } } }
+        "image": { "fields": { "file": { "url": "./images/p5.jpg" } } }
       }
     },
     {
       "sys": { "id": "8" },
       "fields": {
-        "title": "wedding",
+        "title": "my sunshine",
         "price": 33.99,
         "image": { "fields": { "file": { "url": "./images/tobuy3.jpg" } } }
       }
     },
     {
-      "sys": { "id": "7" },
+      "sys": { "id": "9" },
       "fields": {
-        "title": "valentine",
+        "title": "berry symphony",
         "price": 45.99,
         "image": { "fields": { "file": { "url": "./images/tobuy9.jpg" } } }
       }
