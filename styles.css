@@ -136,7 +136,7 @@ nav ul li a:hover::after {
   position: absolute;
   top: -8px;
   right: -8px;
-  background: var(--primaryColor);
+  background: #d95b7f;
   padding: 0 5px;
   border-radius: 30%;
   color: var(--mainWhite);
@@ -718,8 +718,8 @@ textarea {
   width: 100%;
   padding: 10px;
   outline: 0;
-  border: 3px solid #fff;
-  color: #bf4578;
+  border: 2px solid #fff;
+  color: #fff;
   background: transparent;
 }
 label {
@@ -731,15 +731,17 @@ label {
   color: #fff;
   cursor: text;
   transition: 0.2s;
+  /*font-size: 16px;*/
 }
 form button {
   padding: 10px 0;
   color: #fff;
   outline: none;
   background: transparent;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   width: 100%;
   cursor: pointer;
+  /*font-size: 16px;*/
 }
 input:focus~label {
   top: -35px;
