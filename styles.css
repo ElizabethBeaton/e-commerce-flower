@@ -959,7 +959,7 @@ input:focus ~ label {
 }
 @media (max-width: 768px) {
   .item_text {
-    max-width: 700px;
+    max-width: 600px;
   }
   .item img {
     max-width: 350px;
@@ -995,7 +995,7 @@ input:focus ~ label {
     left: 50px;
     width: 400px;
   }
-    .middle_section {
+  .middle_section {
     grid-template-columns: repeat(1, minmax(400px, 1fr));
   }
 }
@@ -1047,7 +1047,7 @@ input:focus ~ label {
 
 @media (max-width: 480px) {
   .item {
-    max-width: 400px;
+    max-width: 500px;
   }
   .item img {
     max-width: 240px;
@@ -1064,6 +1064,28 @@ input:focus ~ label {
     bottom: 160px;
     left: 50px;
     width: 250px;
+  }
+}
+@media (max-width: 440px) {
+  .item {
+    max-width: 400px;
+  }
+  .item_text {
+    max-width: 390px;
+    text-align: center;
+  }
+  .item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 240px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    bottom: 70px;
+    left: 0px;
+  }
+  .item video {
+    display: none;
   }
 }
 
