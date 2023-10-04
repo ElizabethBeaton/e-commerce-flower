@@ -1117,10 +1117,11 @@ input:focus ~ label {
   .text1 p,
   .text2 p {
     margin: 0 auto;
-    max-width: 390px;
+    max-width: 370px;
     font-size: 20px;
     text-align: center;
   }
+
 }
 @media (max-width: 440px) {
   /* MQ FOR HOME PAGE */
